@@ -1,4 +1,6 @@
 # The Pizza Parlor
+This is web application, where you as the customer take part in making your own pizza. Here at the Pizza Parlor
+find it more fun making your compared to selecting your pizza from a menu. Try it out!
 
 # By Jerome Mberia
 
