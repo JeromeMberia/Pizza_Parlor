@@ -1,0 +1,89 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.main-section, #checkout-section {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section {
+  background-image: url("/image/hand\ flour.jpg");
+  min-height: 100vh;
+  /* filter: blur(8px); */
+  color: #fff;
+  
+}
+
+#checkout-section {
+  background-image: url("/image/jason-leung-poI7DelFiVA-unsplash.jpg");
+  min-height: 100vh;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .main-section, #checkout-section {
+    background-attachment: scroll;
+  }
+}
+.child{
+  background-color: #111;
+  color: #fff;
+  height: 637px;
+  width: 400px;
+  padding: 30px;
+  margin-left: 35%;
+  text-align: center;
+}
+/* h1{
+  font-family: 'Monsieur La Doulaise', ;
+} */
+h3{
+  text-decoration: underline;
+}
+.order {
+  position:relative;
+}
+
+#order {
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  text-align: center;
+  /* padding-left: 300px;
+  padding-right: 200px; */
+}
+h1{
+  padding-top: 10px;
+  /* padding-left: 10%;  */
+  font-family: Monsieur La Doulaise;
+  font-size: 50px;
+}
+.intro{
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+/* .form{
+  min-height: 100vh;
+} */
