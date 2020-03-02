@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Tangerine&display=swap" rel="stylesheet">
+    <title>Pizza Parlor</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="intro">
+        <h1>Welcome to the Pizza Parlor</h1>
+      </div>
+    </div>
+    <div class="form">
+      <form id="order">
+        <div class="order">
+          <div class="form-group">
+            <label>Size</label>
+            <select id="size">
+              <option value="1000">Large</option>
+              <option value="800">Medium</option>
+              <option value="600">Small</option>
+            </select>
+          </div>
+            <div class="form-group">
+              <label>Crust</label>
+              <select id="crust">
+                <option value="500">Crispy</option>
+                <option value="500">Stuffed</option>
+                <option value="500">Gluten free</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Toppings</label>
+              <select id="toppings">
+                <option value="100">Pepperoni</option>
+                <option value="100">Mushroom</option>
+                <option value="100">Sausage</option>
+                <option value="100">Extra Cheese</option>
+                <option value="100">Black Olives</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of pizzas</label>
+              <input id="number" type="number">
+            </div>
+            <a href="#checkout-section"><button class="btn-dark" type="submit">Order</button></a>
+          </div>
+        </form>
+      </div>
+    </div>
+   
+    <div id="checkout-section">
+      <div class="child">
+        <h3>Detail</h3>
+        <p>Size of the Pizza : <span id="size"></span></p><br>
+        
+        <p>Type of crust : <span id="crust"></span></p><br>
+        
+        <p>Topping : <span id="topping"></span></p><br>
+        
+        <p>Delivery charges : <strong> 200 Ksh</strong> </p><br>
+        
+        <h3>Amount  </h3>
+        <p class="amount"></p>
+    </div>
+    </div>
+  </body>
+</html>
