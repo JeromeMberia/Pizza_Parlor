@@ -19,7 +19,6 @@ $(document).ready(function() {
     var inputtedPizzaCrust = $("#crust").attr("value");
     var inputtedPizzaToppings = $("#toppings").attr("value");
     var inputtedPizzaQuantity = $("#number").val();
-
     var size =$("#size").val()
     var crust =$("#crust").val()
     var toppings =$("#toppings").val()
@@ -34,6 +33,3 @@ $(document).ready(function() {
     
   })
 })
-
-  
-
