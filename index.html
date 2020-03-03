@@ -9,15 +9,18 @@
     <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Tangerine&display=swap" rel="stylesheet">
     <title>Pizza Parlor</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="main-section">
       <div class="intro">
         <h1>Welcome to the Pizza Parlor</h1>
       </div>
+      <p><strong>Scroll Down</strong></p>
     </div>
     <div class="form">
       <form id="order">
+        <h1>Lets make your Pizza</h1>
         <div class="order">
           <div class="form-group">
             <label>Size</label>
@@ -48,28 +51,40 @@
               <option id="toppings" value="100">Black Olives @100Ksh</option>
             </select>
           </div>
-          <div class="form-group">
+
+
+          <div class="form-group"><br>
               <label>Number of pizzas</label>
               <input id="number" type="number">
-          </div>
-          <a href="#checkout-section"><button class="btn-dark" type="submit">Order</button></a>
+          </div><br>
+          <button class="btn-dark" type="submit">Delivery</button>
+
         </form>
+        <h1>Delivery charges is 200 Ksh</h1>
+        <p class="money"><strong>Scroll Down</strong></p>
       </div>
     </div>
    
     <div id="checkout-section">
       <div class="child">
-        <h3>Detail</h3>
+        <!-- <h3>Detail</h3>
         <p>Size of the Pizza : <span id="size"></span></p><br>
         
         <p>Type of crust : <span id="crust"></span></p><br>
         
         <p>Topping : <span id="topping"></span></p><br>
         
-        <p>Delivery charges : <strong> 200 Ksh</strong> </p><br>
+        <p>Delivery charges : <strong> 200 Ksh</strong> </p><br> -->
         
-        <h3>Amount  </h3>
-        <p class="amount"></p>
+        <h3 class="class2">Amount</h3>
+        <br><br><br>
+        <strong>
+          <h1>Ksh</h1>
+          <p class="amount"></p>
+          <ul id="price">
+
+          </ul>
+        </strong>
     </div>
     </div>
   </body>
