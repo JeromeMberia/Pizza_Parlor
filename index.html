@@ -3,71 +3,85 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Tangerine&display=swap" rel="stylesheet">
     <title>Pizza Parlor</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="main-section">
       <div class="intro">
         <h1>Welcome to the Pizza Parlor</h1>
       </div>
+      <p><strong>Scroll Down</strong></p>
     </div>
     <div class="form">
       <form id="order">
+        <h1>Lets make your Pizza</h1>
         <div class="order">
           <div class="form-group">
             <label>Size</label>
-            <select id="size" class="form-control">
-              <option value="1000">Large</option>
-              <option value="800">Medium</option>
-              <option value="600">Small</option>
+            <select class="form-control">
+              <option></option>
+              <option id="size" value="1000">Large @1000Ksh</option>
+              <option id="size" value="800">Medium @800Ksh</option>
+              <option id="size" value="600">Small @600Ksh</option>
             </select>
           </div>
-            <div class="form-group">
-              <label>Crust</label>
-              <select id="crust" class="form-control">
-                <option value="500">Crispy</option>
-                <option value="500">Stuffed</option>
-                <option value="500">Gluten free</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Toppings</label>
-              <select id="toppings" class="form-control" >
-                <option value="100">Pepperoni</option>
-                <option value="100">Mushroom</option>
-                <option value="100">Sausage</option>
-                <option value="100">Extra Cheese</option>
-                <option value="100">Black Olives</option>
-              </select>
-            </div>
-            <div class="form-group">
+          <div class="form-group">
+            <label>Crust</label>
+            <select class="form-control">
+              <option></option>
+              <option id="crust" value="500">Crispy @500 Ksh</option>
+              <option id="crust" value="500">Stuffed @500Ksh</option>
+              <option id="crust" value="500">Gluten free @500Ksh</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Toppings</label>
+            <select class="form-control" >
+              <option></option>
+              <option id="toppings" value="100">Pepperoni @100Ksh</option>
+              <option id="toppings" value="100">Mushroom @100Ksh</option>
+              <option id="toppings" value="100">Sausage @100Ksh</option>
+              <option id="toppings" value="100">Extra Cheese @100Ksh</option>
+              <option id="toppings" value="100">Black Olives @100Ksh</option>
+            </select>
+          </div>
+          <div class="form-group"><br>
               <label>Number of pizzas</label>
               <input id="number" type="number">
-            </div>
-            <a href="#checkout-section"><button class="btn-dark" type="submit">Order</button></a>
-          </div>
+          </div><br>
+          <button class="btn-dark" type="submit">Delivery</button>
         </form>
+        <h1>Delivery charges is 200 Ksh</h1>
+        <p class="money"><strong>Scroll Down</strong></p>
       </div>
     </div>
    
     <div id="checkout-section">
       <div class="child">
-        <h3>Detail</h3>
+        <!-- <h3>Detail</h3>
         <p>Size of the Pizza : <span id="size"></span></p><br>
         
         <p>Type of crust : <span id="crust"></span></p><br>
         
         <p>Topping : <span id="topping"></span></p><br>
         
-        <p>Delivery charges : <strong> 200 Ksh</strong> </p><br>
+        <p>Delivery charges : <strong> 200 Ksh</strong> </p><br> -->
         
-        <h3>Amount  </h3>
-        <p class="amount"></p>
+        <h3 class="class2">Amount</h3>
+        <br><br><br>
+        <strong>
+          <h1>Ksh</h1>
+          <p class="amount"></p>
+          <ul id="price">
+
+          </ul>
+        </strong>
     </div>
     </div>
   </body>
