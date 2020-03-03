@@ -9,17 +9,8 @@ function Order(pSize, pCrust, pToppings, pNumber){
 Order.prototype.total = function () {
   this.totalPrice = parseInt(this.Size) + parseInt(this.Toppings) + parseInt(this.Crust);
   return this.totalPrice * parseInt(this.Quantity);
+
 } 
-
-// function Detail(size, crust, toppings){
-//   this.size = size
-//   this.crust = crust
-//   this.toppings = toppings
-// }
-
-// Detail.prototype.price = function () {
-//    return this.firstName + " " + this.lastName + " " +this.toppings;
-// }
 
 
 // User logic
@@ -46,6 +37,9 @@ $(document).ready(function() {
     // $("ul#price").append("<li><span class='contact'>" + newDetail.price() + "</span></li>");
   
 
+    // $(".child").show()
+    $(".amount").text(newOrder.total());
+    
     console.log (newOrder.total());
   })
 })
