@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
   background-size: cover;
 }
 .main-section {
-  background-image: url("image/hand\ flour.jpg");
+  background-image: url("/image/hand\ flour.jpg");
   min-height: 100vh;
   /* filter: blur(8px); */
   color: #fff;
@@ -25,7 +25,7 @@ body::-webkit-scrollbar{
 }
 
 #checkout-section {
-  background-image: url("image/jason-leung-poI7DelFiVA-unsplash.jpg");
+  background-image: url("/image/jason-leung-poI7DelFiVA-unsplash.jpg");
   min-height: 100vh;
 }
 
@@ -87,3 +87,7 @@ h1{
 /* .form{
   min-height: 100vh;
 } */
+
+.chlid{
+  display: none;
+}
