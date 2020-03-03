@@ -103,6 +103,7 @@ h1{
   text-align: center;
 }
 
+
 .child{
   display: none;
 }
@@ -114,4 +115,3 @@ h1{
  .form p{
    display: none;
  }
-
